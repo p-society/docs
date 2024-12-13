@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Programming Society IIIT-Bh",
-    pageTitleSuffix: "Saswat",
+    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -41,9 +41,9 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
+          light: "#FFA700",
+          lightgray: "#FFA700",
+          gray: "#FFA700",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
           secondary: "#7b97aa",
