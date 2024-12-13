@@ -1,0 +1,1 @@
+**GC Broadcast / Grand Championship Broadcasting Service** is a live score broadcasting application for both web and app platforms. The application is built using Golang,Kafka,MongoDB, SSE (Server-Sent Events), and Redis. The web version is being developed using Next.js, while the app version is built using Flutter.
