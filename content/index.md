@@ -14,15 +14,12 @@ The primary objective of this repository is to:
 Learn the various [deployment options](https://github.com/jackyzha0/quartz/blob/v4/docs/hosting.md) to get this page up and running quickly and efficiently in your environment.
 ## Contribute
 
-Your expertise matters; regardless of your technical background, you can contribute to PSoc Projects by creating issues, writing code, implementing new features, or fixing bugs, all in line with the [contribution guidelines](https://developer.rocket.chat/v1/docs/contributing).
-
-You can also contribute to the documentation by providing feedback according to the [feedback guidelines](https://developer.rocket.chat/docs/documentation-contribution-guidelines).
-
+Your expertise matters; regardless of your technical background, you can contribute to PSoc Projects by creating issues, writing code, implementing new features, or fixing bugs, all in line with the [contribution guidelines](https://github.com/p-society/meta).
 ## Connect
 
-Join the [open server](https://open.rocket.chat/) community and [repositories](https://github.com/RocketChat) to connect and collaborate. Get assistance from the global community and open channels.
+Join the [discord server](https://discord.gg/UVJhpN9S) community and [repositories](https://github.com/p-society) to connect and collaborate. Get assistance from the community and open channels.
 
-Visit the [user guide](https://docs.rocket.chat/) to learn more about Rocket.Chat. Welcome aboard, and let's build better communication together!
+Welcome aboard, and let's build better software, together!
 ---
 
 This repository is maintained by the **Programming Society (PSoc)** at IIIT Bhubaneswar. Contributions are welcome and appreciated!
