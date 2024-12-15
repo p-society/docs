@@ -1,6 +1,6 @@
 The product consists of three main components:
 
-The product consists of three core components, each designed to cater to different user needs and administrative roles. The **Mobile Application / Webview** serves as the main interface for the audience and players. It provides a platform for the audience to view live scores, match updates, and other event-related information. Players can also use this component to manage and update their personal profiles, offering a dynamic and engaging experience for those actively participating in the events.
+The product consists of three core components, each designed to cater to different user needs and administrative roles. The **Web Application** serves as the main interface for the audience and players. It provides a platform for the audience to view live scores, match updates, and other event-related information. Players can also use this component to manage and update their personal profiles, offering a dynamic and engaging experience for those actively participating in the events.
 
 The second component is the **Web Application (Admin Panel)**, which offers the Admin full control over the entire system. Through this panel, the admin can manage and configure match listings, oversee user accounts, and handle other critical system operations such as session management and security settings. This ensures that the system runs smoothly and allows the admin to make real-time adjustments as necessary.
 
@@ -14,6 +14,8 @@ Roles in the applications are:
 | **ADMIN**  | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
 | **SYSTEM** | Refers to programmatic actions and automated processes performed by the application, such as data updates, scheduled tasks, or system-generated changes.                                |
 # **Player Registrations, Audience Access, and Profiles**
+
+^11b4bc
 
 Players will undergo a progressive registration process, ensuring their profiles are built and updated gradually as they engage with the application. This allows for a personalized experience, where information is captured over time based on the player's interaction with the platform.
 
@@ -73,29 +75,21 @@ The platform offers a public view system for Audience , allowing users to explor
 # Admin Flows 
 
 Admins can :
+#### **Listings**
 
-#### **Match Listings**
-
-Admins have full control over match listings, allowing them to add, update, or remove matches as needed. They can configure match details such as date, time, teams involved, venue, and other relevant information. The system ensures that the correct match information is displayed for both players and the audience, and admins can make real-time adjustments as necessary to keep everything up-to-date.
-
-#### **Squad Listings**
-
-Admins can manage team squads, ensuring that all teams are accurately represented and up to date. This includes adding or removing players from squads, updating team compositions, and verifying the integrity of squad rosters. This flow ensures that each team is properly represented in the system and ready for match participation.
-
-#### **Team Listings**
-
-Admins can manage and configure the list of teams within the system. They can add new teams, update team information, or remove teams if necessary. This functionality allows the admin to maintain an accurate record of all participating teams and ensures that the team information is accessible for both players and the audience.
-
+Admins have full control over [[Matches]], [[Teams]], [[Squads]] listings, allowing them to perform CRUD over them.
 #### **Player Management (Enable/Disable/Remove)**
-
-Admins have the ability to manage player accounts within the system. They can enable or disable player profiles based on their participation status or account status. In cases where players are no longer part of the platform, admins can remove their profiles from the system entirely. This helps ensure that only active and valid players are part of the platform, maintaining the integrity of the player base.
 
 #### **Session Management (Terminate Sessions)**
 
-Admins have full control over user sessions. This includes the ability to terminate live user sessions in real-time if necessary. For example, if there are security concerns or if a user is violating platform rules, the admin can immediately end their session to prevent further disruptions. This functionality ensures that the platform remains secure and that any inappropriate activity can be swiftly addressed.
+For instance, if an admin notices a user violating platform rules, such as sending inappropriate messages during a live match, they can terminate the user's session immediately. This would disconnect the user in real-time, preventing further disruption and ensuring the platform remains secure and respectful for all participants.
 
-#### **Umpire Promotion from Pool of Players**
+#### **Umpire Assignment from Pool of Players**
 
-Admins can promote players to the role of umpire from the pool of available players. This allows the admin to assign new umpires as required for matches, ensuring that the right individuals are given the responsibility. The process of promoting players to umpires is crucial for maintaining the integrity of the game, and admins can manage this promotion flow as needed. Further details on this functionality will be provided in subsequent documentation.
+[[Umpiring |Learn About Umpiring]]
 
-These admin flows ensure that the platform remains flexible, secure, and organized, providing admins with the necessary tools to manage every aspect of the application efficiently.
+Admins have the ability to promote players to the role of umpire from a pool of available players.
+
+This allows them to assign umpires to matches as needed, ensuring the integrity of the game. The process of promoting players helps ensure that only qualified individuals are given umpiring responsibilities.
+
+This functionality is important for maintaining a smooth and organized system, with the flexibility for admins to manage match operations effectively. Further details on this process will be outlined in the documentation.
