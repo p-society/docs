@@ -1,4 +1,4 @@
-Unlike [guidelines](Guidelines), these are not enforcements. They are suggestions and advice for writing performant, maintainable and scalable code. You should follow these to have a great degree of control over the code you write, avoid unnecessary abstraction and [technical debt](Glossary/Non-technical/Technical Debt) in the code base.
+Unlike [guidelines](Guidelines), these are not enforcements. They are suggestions and advice for writing performant, maintainable and scalable code. You should follow these to have a great degree of control over the code you write, avoid unnecessary abstraction and [technical debt](Glossary/Non-technical/Technical-Debt) in the code base.
 
 ### 1. Write Atomic Code
 
