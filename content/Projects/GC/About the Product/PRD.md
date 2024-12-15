@@ -1,15 +1,19 @@
-The product involves three components 
+The product consists of three main components:
 
-- a mobile application / webview  to be used for viewing scores, updates, information for audience & players to put up their details, etc. 
-- a web application to be used as a superadmin panel - to list matches and control the entire application, sessions etc
-- a admin application / webview to be used for updating the scores
-Roles: 
+The product consists of #three core components, each designed to cater to different user needs and administrative roles. The **Mobile Application / Webview** serves as the main interface for the audience and players. It provides a platform for the audience to view live scores, match updates, and other event-related information. Players can also use this component to manage and update their personal profiles, offering a dynamic and engaging experience for those actively participating in the events.
+
+The second component is the **Web Application (Superadmin Panel)**, which offers the Superadmin full control over the entire system. Through this panel, the Superadmin can manage and configure match listings, oversee user accounts, and handle other critical system operations such as session management and security settings. This ensures that the system runs smoothly and allows the Superadmin to make real-time adjustments as necessary.
+
+Lastly, the **Admin Application / Webview** is designed for administrators responsible for updating match scores in real-time. This interface enables admins to input, modify, and track scores as the matches progress, ensuring that all data remains accurate and up-to-date. The Admin Application plays a crucial role in maintaining the integrity and flow of live events, ensuring that users and players have access to the latest match information.
 
 | **Role**   | **Description**                                                                                                                                                                         |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **USER**   | Represents general users of the application, including roles such as Audience, Captains, and Umpires. Users can browse various components of the platform based on their specific role. |
 | **ADMIN**  | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
 | **SYSTEM** | Refers to programmatic actions and automated processes performed by the application, such as data updates, scheduled tasks, or system-generated changes.                                |
+
+^e7fb69
+
 ### Functional Requirements
 # **User Management**
 
@@ -36,17 +40,15 @@ Future updates will introduce [[Form Fields]]
 
 
 #after-registration
-After registration, players will initially have access similar to that of an unauthorized **Audience**. However, they will have additional capabilities that enhance their engagement and participation within the platform.
+After registration, players will initially have access similar to that of an unauthorized **AUDIENCE**. However, they will have additional capabilities that enhance their engagement and participation within the platform.
 
 ### **Players can:**
 
-- **Change their profile**: Players can update and modify their personal details, such as their name, contact information, and other profile settings, ensuring their information is always up-to-date.
-- **Request to join teams**: Players can express interest in joining specific teams, allowing for seamless integration into team-based activities and events.
-- **Leave a team**: Players have the ability to request to leave a team, providing them with control over their participation and team affiliations.
-- **Team Actions**: Players can take actions related to team management, such as requesting team membership or initiating team changes, all within the context of the platform’s team structure.
+- **Change their profile**
+- **Request to join teams**: Players can express interest in joining specific teams, which can be then approved / rejected by **Team Captains** ( more about this , later).
+- **Leave a team**
 
-### **Future Scope:**
-
+#future-scope
 - **Self-Review**: In the future, players will have the ability to self-review their performance, gaining insights into their contributions and progress. This feature will help players evaluate their skills and growth, fostering a more self-driven approach to improvement.
 superadmin POV: 
 
