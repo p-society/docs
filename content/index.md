@@ -2,6 +2,9 @@
 title: Welcome to Project Documentation !
 ---
 Welcome to the **API Documentation Repository** for all projects under the Programming Society (PSoc) at IIIT Bhubaneswar. This page serves as a centralized hub for maintaining and accessing Requirement Docs, API Documentation,Decision explanations for various projects developed by the society members.
+
+![[psoc.png]]
+
 ## Purpose
 The primary objective of this repository is to:
 - Provide a well-organized and user-friendly repository for all API-related documentation across PSoc projects.

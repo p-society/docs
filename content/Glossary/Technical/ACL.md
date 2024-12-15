@@ -6,8 +6,6 @@ There are several types of ACLs, with the most common being **Discretionary ACLs
 
 ACLs are widely used in file systems to secure files and directories, as well as in network devices such as routers and firewalls to control the flow of data and protect against unauthorized access. By using ACLs, administrators can set fine-grained permissions, ensuring that only authorized users can access specific resources, and maintaining the confidentiality and integrity of the system.
 
-However, managing ACLs can become complex in large environments with numerous users and resources. If not properly configured, ACLs can also lead to security risks, such as overly permissive access or conflicts in permissions. To mitigate these challenges, it’s important to regularly audit ACL configurations and ensure that permissions are set in line with the principle of least privilege.
-
-Overall, ACLs are a powerful tool for securing resources and enforcing access control policies, but they must be carefully managed to maintain system security and efficiency.
+Managing ACLs can become complex in large environments with numerous users and resources. If not properly configured, ACLs can also lead to security risks, such as overly permissive access or conflicts in permissions. To mitigate these challenges, it’s important to regularly audit ACL configurations and ensure that permissions are set in line with the principle of least privilege.
 
 Learn more about ACLs [[https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html|here]].
