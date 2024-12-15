@@ -15,6 +15,8 @@ Roles in the applications are:
 | **SYSTEM** | Refers to programmatic actions and automated processes performed by the application, such as data updates, scheduled tasks, or system-generated changes.                                |
 # **Player Registrations, Audience Access, and Profiles**
 
+^11b4bc
+
 Players will undergo a progressive registration process, ensuring their profiles are built and updated gradually as they engage with the application. This allows for a personalized experience, where information is captured over time based on the player's interaction with the platform.
 
 During registration, players will be required to provide the following essential details:
