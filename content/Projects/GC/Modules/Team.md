@@ -1,10 +1,13 @@
-## Journey
-- admins select squad-captains. these squad captains then build teams.
-- they create team with name and additional details, for a particular match
-- they can edit and delete teams 
+Learn more about Teams [[teams|here]].
+### Journey
 
-## Access Control
+Admins assign [[Squad]] captains, who are then responsible for building the teams for each match. The captains create teams by selecting players from their squad and adding necessary details, such as the team name and match-specific information. Once a team is created, captains can also edit or delete teams as needed, ensuring that the teams are properly set up for each match.
 
-## ERD 
+### Access Control
 
-## Specs
+- **Admins**: Can assign squad captains and oversee team creation, edits, and deletions.
+- **Captains**: Can create, edit, and delete teams within their squad for a specific match.
+
+## ERD
+
+#WIP
