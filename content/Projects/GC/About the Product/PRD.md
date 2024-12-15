@@ -73,14 +73,13 @@ The platform offers a public view system for Audience , allowing users to explor
 # Admin Flows 
 
 Admins can :
-
 #### **Match Listings**
 
 Admins have full control over match listings, allowing them to add, update, or remove matches as needed. They can configure match details such as date, time, teams involved, venue, and other relevant information. The system ensures that the correct match information is displayed for both players and the audience, and admins can make real-time adjustments as necessary to keep everything up-to-date.
 
 #### **Squad Listings**
 
-Admins can manage team squads, ensuring that all teams are accurately represented and up to date. This includes adding or removing players from squads, updating team compositions, and verifying the integrity of squad rosters. This flow ensures that each team is properly represented in the system and ready for match participation.
+Admins can manage [[Team]] squads, ensuring that all teams are accurately represented and up to date. This includes adding or removing players from squads, updating team compositions, and verifying the integrity of squad rosters. This flow ensures that each team is properly represented in the system and ready for match participation.
 
 #### **Team Listings**
 
