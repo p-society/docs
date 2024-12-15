@@ -1,6 +1,6 @@
-# **PSOC Documents Vault**
+# **PSoc Documents Vault**
 
-Welcome to the **PSOC Documentation Vault**, a centralized repository for all project-related documentation. This vault is designed to help contributors, developers, and stakeholders access key resources efficiently and collaborate effectively.
+Welcome to the **PSoc Documents Vault**, a centralized repository for all project-related documentation. This vault is designed to help contributors, developers, and stakeholders access key resources efficiently and collaborate effectively.
 
 ### **Contents**
 
