@@ -13,28 +13,39 @@ Roles:
 ### Functional Requirements
 # **User Management**
 
-### **Sign-Up and Login**
+### **Player Registrations, Audience Access, and Profiles**
 
-- Users will register and log in to the application using their mobile number and a One-Time Password (OTP) for authentication.
+Players will undergo a progressive registration process, ensuring their profiles are built and updated gradually as they engage with the application. This allows for a personalized experience, where information is captured over time based on the player's interaction with the platform.
 
-### **Profile Management**
+During registration, players will be required to provide the following essential details:
 
-#### **For Users (Players)**
+- **First Name**
+- **Middle Name**
+- **Last Name**
+- **Phone Number**
+- **Valid College Email ID ( ending with *@iiit-bh.ac.in) ***
+- **Gender**
+- **Batch**
+- **Branch**
 
-- Players will have a personalized experience, allowing them to create and update their profiles with essential details. This helps ensure their interactions within the application are tailored to their needs and preferences. The profile can include:
-- it will be progressive registration 
-    - **First Name**
-    - **Middle Name**
-    - **Last Name**
-    - **Phone Number**
-    - **Email Address (only  via clg email id)** 
-    - **Gender**
-    - **Batch**
-    - **Branch**
-    - **socials:[]** ? 
+Additionally, players have the option to include their social media profiles (e.g., links to their social handles), although this is not mandatory.
 
-branch is a sensitive issue - if any isue arrises (branch changes )can be raisede and done fixed by superadmin
-- future scope involves form fields integrations
+The **branch** field is particularly sensitive. In case of any changes, such as a branch transfer, players can raise an issue, which will be reviewed and resolved by `SUPERADMIN` to ensure that all information remains accurate.
+
+Future updates caintroduce dynamic form field integrations, allowing the registration process to evolve with new features and requirements, further enhancing the flexibility and personalization of user profiles.
+
+players can: 
+- change profile 
+- request for joining teams
+- team leave
+  TEAM_ACTIONS
+- self-review (review your performance) - FUTURE SCOPE
+
+
+superadmin POV: 
+
+- change 
+
 
 
 - create profile 
