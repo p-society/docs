@@ -3,8 +3,6 @@ The product involves three components
 - a mobile application / webview  to be used for viewing scores, updates, information for audience & players to put up their details, etc. 
 - a web application to be used as a superadmin panel - to list matches and control the entire application, sessions etc
 - a admin application / webview to be used for updating the scores
-
-
 Roles: 
 
 | **Role**       | **Description**                                                                                                                                                                         |
@@ -21,7 +19,8 @@ Roles:
 
 ### **Profile Management**
 
-for the audience mobile app, for people who just want to explore the application, can use a dummy-user credentials
+for the audience mobile app, for people who just want to explore the application, can use a dummy-user credentials <add something more on this.. and its philosophy>
+
 - Users will have the ability to create and update their profiles with the following details:
     - **First Name**
     - **Last Name**
