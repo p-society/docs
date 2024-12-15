@@ -34,8 +34,6 @@ The Grand Championship Broadcast System aims to provide real-time score updates 
     
     - Basic statistics and insights, such as win/loss rates, player rankings and demographics.
 
----
-
 #### **Future Scope Features**
 
 These features are open to discussion and will not be implemented in the current version. 
