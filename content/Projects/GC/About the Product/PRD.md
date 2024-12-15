@@ -2,7 +2,7 @@ The product consists of three main components:
 
 The product consists of three core components, each designed to cater to different user needs and administrative roles. The **Mobile Application / Webview** serves as the main interface for the audience and players. It provides a platform for the audience to view live scores, match updates, and other event-related information. Players can also use this component to manage and update their personal profiles, offering a dynamic and engaging experience for those actively participating in the events.
 
-The second component is the **Web Application (Superadmin Panel)**, which offers the Superadmin full control over the entire system. Through this panel, the Superadmin can manage and configure match listings, oversee user accounts, and handle other critical system operations such as session management and security settings. This ensures that the system runs smoothly and allows the Superadmin to make real-time adjustments as necessary.
+The second component is the **Web Application (Admin Panel)**, which offers the Admin full control over the entire system. Through this panel, the admin can manage and configure match listings, oversee user accounts, and handle other critical system operations such as session management and security settings. This ensures that the system runs smoothly and allows the admin to make real-time adjustments as necessary.
 
 Lastly, the **Admin Application / Webview** is designed for administrators responsible for updating match scores in real-time. This interface enables admins to input, modify, and track scores as the matches progress, ensuring that all data remains accurate and up-to-date. The Admin Application plays a crucial role in maintaining the integrity and flow of live events, ensuring that users and players have access to the latest match information.
 
@@ -13,7 +13,7 @@ Roles in the applications are:
 | **USER**   | Represents general users of the application, including roles such as Audience, Captains, and Umpires. Users can browse various components of the platform based on their specific role. |
 | **ADMIN**  | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
 | **SYSTEM** | Refers to programmatic actions and automated processes performed by the application, such as data updates, scheduled tasks, or system-generated changes.                                |
-### **Player Registrations, Audience Access, and Profiles**
+# **Player Registrations, Audience Access, and Profiles**
 
 Players will undergo a progressive registration process, ensuring their profiles are built and updated gradually as they engage with the application. This allows for a personalized experience, where information is captured over time based on the player's interaction with the platform.
 
@@ -23,27 +23,27 @@ During registration, players will be required to provide the following essential
 - **Middle Name**
 - **Last Name**
 - **Phone Number**
-- **Valid College Email ID ( ending with *@iiit-bh.ac.in)
+- **Valid College Email ID ( ending with *@iiit-bh.ac.in)**
 - **Gender**
 - **Batch**
 - **Branch**
 
 Additionally, players have the option to include their social media profiles (e.g., links to their social handles), although this is not mandatory.
 
-The **branch** field is particularly sensitive. In case of any changes, such as a branch transfer, players can raise an issue, which will be reviewed and resolved by `SUPERADMIN` to ensure that all information remains accurate.
+The **branch** field is particularly sensitive. In case of any changes, such as a branch transfer, players can raise an issue, which will be reviewed and resolved by `ADMIN` to ensure that all information remains accurate.
 
 Future updates will introduce [[Form Fields]]
 ### After Registration
 
 After registration, players will initially have  similar access to that of an unauthorized **AUDIENCE**. However, they will have additional capabilities that enhance their engagement and participation within the platform.
-### **Players can:**
+#### **Players can:**
 
 - **Change their details**
 - **Create Profiles**
 - **Request to join teams**: Players can express interest in joining specific teams, which can be then approved / rejected by **Team Captains** ( more about this , later).
 - **Leave a team**
 
-# Profiles 
+### Profiles 
 
 A **profile** is essentially a collection of information that helps to define and showcase an individual's skills, background, and specific attributes. For players, a profile serves as a personal identity card that not only provides basic details but also highlights their expertise, performance, and other relevant information. This helps both the player and the audience to better understand the player’s capabilities and strengths.
 
@@ -59,7 +59,7 @@ For example, consider **Saswat's Profile** in the context of a cricket player. I
 - **Wickets Taken**: 25
 - **Best Performance**: 150 runs in a match, 5 wickets in an innings
 - **Player Bio**: A brief description of the player’s cricket journey, strengths, and any notable achievements
-- **Achievements**: Trophies, awards, or significant milestones in their career (apparently saswat has no cricket acheivements so lets keep this empty :x)
+- **Achievements**: This section typically highlights significant milestones, awards, or trophies earned throughout a player's career (However, in Saswat's case, there are currently no recorded cricket achievements, so this section will remain empty for now xD)
 
 This profile will allow the audience to quickly identify the player’s strengths, role in the team, and notable achievements, creating a deeper connection with the audience and enhancing player visibility. For the player, it serves as a dynamic and evolving record of their skills and accomplishments, which can be updated as they progress in their sporting journey.
 
@@ -70,7 +70,32 @@ This profile will allow the audience to quickly identify the player’s strength
 
 The platform offers a public view system for Audience , allowing users to explore the application without the need for full registration. This feature enables audience members to access content such as match updates, team information, and live scores without requiring them to create a personal profile. The philosophy behind this approach is to promote open access and inclusivity, providing anyone the opportunity to casually engage with the platform. This allows users to familiarize themselves with the application and its offerings before deciding whether to create a personalized profile, making the platform accessible to all, regardless of their level of involvement.
 
-
 # Admin Flows 
 
+Admins can :
 
+#### **Match Listings**
+
+Admins have full control over match listings, allowing them to add, update, or remove matches as needed. They can configure match details such as date, time, teams involved, venue, and other relevant information. The system ensures that the correct match information is displayed for both players and the audience, and admins can make real-time adjustments as necessary to keep everything up-to-date.
+
+#### **Squad Listings**
+
+Admins can manage team squads, ensuring that all teams are accurately represented and up to date. This includes adding or removing players from squads, updating team compositions, and verifying the integrity of squad rosters. This flow ensures that each team is properly represented in the system and ready for match participation.
+
+#### **Team Listings**
+
+Admins can manage and configure the list of teams within the system. They can add new teams, update team information, or remove teams if necessary. This functionality allows the admin to maintain an accurate record of all participating teams and ensures that the team information is accessible for both players and the audience.
+
+#### **Player Management (Enable/Disable/Remove)**
+
+Admins have the ability to manage player accounts within the system. They can enable or disable player profiles based on their participation status or account status. In cases where players are no longer part of the platform, admins can remove their profiles from the system entirely. This helps ensure that only active and valid players are part of the platform, maintaining the integrity of the player base.
+
+#### **Session Management (Terminate Sessions)**
+
+Admins have full control over user sessions. This includes the ability to terminate live user sessions in real-time if necessary. For example, if there are security concerns or if a user is violating platform rules, the admin can immediately end their session to prevent further disruptions. This functionality ensures that the platform remains secure and that any inappropriate activity can be swiftly addressed.
+
+#### **Umpire Promotion from Pool of Players**
+
+Admins can promote players to the role of umpire from the pool of available players. This allows the admin to assign new umpires as required for matches, ensuring that the right individuals are given the responsibility. The process of promoting players to umpires is crucial for maintaining the integrity of the game, and admins can manage this promotion flow as needed. Further details on this functionality will be provided in subsequent documentation.
+
+These admin flows ensure that the platform remains flexible, secure, and organized, providing admins with the necessary tools to manage every aspect of the application efficiently.
