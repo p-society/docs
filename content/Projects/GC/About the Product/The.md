@@ -22,12 +22,19 @@ Roles:
 #### **For Users (Players)**
 
 - Players will have a personalized experience, allowing them to create and update their profiles with essential details. This helps ensure their interactions within the application are tailored to their needs and preferences. The profile can include:
+- it will be progressive registration 
     - **First Name**
     - **Middle Name**
     - **Last Name**
     - **Phone Number**
     - **Email Address (only  via clg email id)** 
     - **Gender**
+    - **Batch**
+    - **Branch**
+    - **socials:[]** ? 
+
+branch is a sensitive issue - if any isue arrises (branch changes )can be raisede and done fixed by superadmin
+- future scope involves form fields integrations
 
 
 - create profile 
