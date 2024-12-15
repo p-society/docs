@@ -1,0 +1,3 @@
+- Coding Styles
+- Naming convention
+- Documentation expectations

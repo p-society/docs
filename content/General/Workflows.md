@@ -1,0 +1,1 @@
+Picking up a feature, understanding requirements, reaching out for doubts (technical and requirement), maintaining documents
