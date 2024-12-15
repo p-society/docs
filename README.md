@@ -15,7 +15,7 @@ Welcome to the **PSoc Documents Vault**, a centralized repository for all projec
 
 ### **Get Involved**
 
-Join the **PSOC Community** to contribute, discuss, and stay updated!  
+Join the **PSoc Community** to contribute, discuss, and stay updated!  
 👉 [Join the Discord Community](https://discord.gg/E5hS38Uz)
 
 ---
