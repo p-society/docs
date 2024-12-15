@@ -112,6 +112,39 @@ async function renderPDFAndUploadToS3(templatePath, data) {
 Now each function can scale, change and handle errors in it's own scope. This implementation not only makes it easy to read and understand the code but delegates responsibility to separate functions making them independent to change in other functions, easy to debug and reusable.
 
 ### 2. Usage of AI
+
+It would be easier to ask you to use AI judiciously but I will (try to) list everything you should choose to do (and not do) with all the amazing LLMs out there.
+
+A general fact - to learn and write great code you must go through frustrating, anxious, confusing, self-doubting, blood boiling, hair-pulling, banging-head-on-your-keyboard and about-to-cry hours in front of your computer. That's the best way to do it. That's the best way to learn.
+
+It's easy to find 'quick' solutions to complex problems using AI but that comes with it's side effects. When we brute force our way out of solutions using AI, it general looks like this: 
+- GPT a solution
+- use the subpar solution
+- face bottlenecks, roadblocks and errors in the subpar solution
+- GPT the solution again
+
+We keep doing this until the code becomes a mix of generated code that looks fancy, we have some vague idea of and operates on very low confidence levels. This not only makes you more dependent on AI for the next steps but introduces abstraction that was never needed.
+
+How you should use them so they support you:
+- Don't copy-pasta generated code unless it's **test data, complex database queries/aggregations/regular-expressions, repetition of code you fully understand or a refactor of code you originally wrote.** 
+- Use it to understand errors, not bypass them. 
+- Read documentation to understand usage of a technology before asking an LLM.
 ### 3. Approach to Roadblocks
+
+You will inevitably hit roadblocks. 
+
+Try to:
+- Read official documentation of the technology
+- Find solutions in blogs/articles/forums
+- Ask a peer or senior
+- Find a YouTube video
+- Ask an LLM
+- Go through the source code
+
+In order, from the top.
 ### 4. Blueprint before writing
+
+'Figuring out as you write' is the surest way to write code that could have been written better. You should have a mental or physical (scribble on a page as much as you can) blueprint of the system/sub-system you are going to write. 
+
+Know what you are writing before you write. 
 
