@@ -5,12 +5,11 @@ The product involves three components
 - a admin application / webview to be used for updating the scores
 Roles: 
 
-| **Role**  | **Description**                                                                                                                                                                         |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **USER**  | Represents general users of the application, including roles such as Audience, Captains, and Umpires. Users can browse various components of the platform based on their specific role. |
-| **ADMIN** | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
-|           |                                                                                                                                                                                         |
-
+| **Role**   | **Description**                                                                                                                                                                         |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **USER**   | Represents general users of the application, including roles such as Audience, Captains, and Umpires. Users can browse various components of the platform based on their specific role. |
+| **ADMIN**  | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
+| **SYSTEM** | Refers to programmatic actions and automated processes performed by the application, such as data updates, scheduled tasks, or system-generated changes.                                |
 ### Functional Requirements
 # **User Management**
 
@@ -20,12 +19,20 @@ Roles:
 
 ### **Profile Management**
 
-for the audience mobile app, for people who just want to explore the application, can use a dummy-user credentials <add something more on this.. and its philosophy>
+#### **For Users (Players)**
 
-- Users will have the ability to create and update their profiles with the following details:
+- Players will have a personalized experience, allowing them to create and update their profiles with essential details. This helps ensure their interactions within the application are tailored to their needs and preferences. The profile can include:
     - **First Name**
+    - **Middle Name**
     - **Last Name**
-    - **Phone**
-    - **Email Address**
+    - **Phone Number**
+    - **Email Address (only  via clg email id)** 
     - **Gender**
-    - **Type of Interest** (e.g., Professional, Hobbies)
+
+
+- create profile 
+
+#### **For the Audience**
+
+- For users who wish to explore the application without full registration, the platform provides a public view system. This allows audience members to browse content such as match updates, team information, and live scores without the need for a personal profile.
+- The philosophy behind this is to foster open access and inclusivity, enabling anyone to engage with the platform casually before deciding to create a more personalized profile. This approach ensures that the application is accessible to all users, whether they are looking for quick information or seeking a more tailored experience as a player or participant.
