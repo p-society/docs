@@ -137,7 +137,6 @@ Try to:
 - Read official documentation of the technology
 - Find solutions in blogs/articles/forums
 - Ask a peer or senior
-- Find a YouTube video
 - Ask an LLM
 - Go through the source code
 
