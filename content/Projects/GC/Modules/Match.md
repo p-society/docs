@@ -1,22 +1,13 @@
-### Journey
+Learn more about Matches [[Matches|here]].
+### Journey 
 
-The match lifecycle starts with admins creating and managing match details. Key details include the teams involved, squad assignments, venue, date, and match status. Admins have full control over match creation, updates, and deletions, ensuring that matches are properly scheduled, rescheduled, or canceled as needed.
+The journey of a match begins when admins create and manage match details through the admin panel. Admins are responsible for filling in key information such as the teams, squad assignments, venue, date, and the match's status. Once created, matches are visible to the audience and users, who can view upcoming and past matches but cannot modify any details. Admins also have the authority to assign umpires to the match, who are responsible for officiating, updating scores, and other related tasks. The match lifecycle is fully controlled by admins, who can edit, reschedule, or cancel matches as necessary to ensure smooth operations.
+
+Learn more about [[Umpiring]] and [[Umpire Assignment - Promote Player with TTL]]
 ### Access Control
 
-- **Admins:** Can create, edit, and delete matches.
-- **Audience & Users:** Can only view upcoming and past matches, with no permission to modify match details.
-
+- **Admins** have the ability to create, edit, and delete matches.
+- **Audience & Users** can only view the upcoming and past matches but cannot alter any match details.
 ### ERD (Entity Relationship Diagram)
 
-| **Column** | **Type**    | **Description**                                                   |
-| ---------- | ----------- | ----------------------------------------------------------------- |
-| **id**     | `string`    | Primary key, unique identifier for the match                      |
-| **team1**  | `string`    | Foreign key to the first team in the match                        |
-| **team2**  | `string`    | Foreign key to the second team in the match                       |
-| **squad1** | `string`    | Foreign key to the first squad                                    |
-| **squad2** | `string`    | Foreign key to the second squad                                   |
-| **umpire** | `string`    | Foreign key to the umpire assigned to the match                   |
-| **venue**  | `string`    | Location of the match                                             |
-| **date**   | `timestamp` | Date and time when the match takes place                          |
-| **status** | `string`    | Current status of the match (e.g., Scheduled, Ongoing, Completed) |
-Admins are responsible for setting the match's status and managing the overall lifecycle of the match.
+#WIP
