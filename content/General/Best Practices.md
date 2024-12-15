@@ -115,15 +115,15 @@ Now each function can scale, change and handle errors in it's own scope. This im
 
 It would be easier to ask you to use AI judiciously but I will (try to) list everything you should choose to do (and not do) with all the amazing LLMs out there.
 
-A general fact - to learn and write great code you must go through frustrating, anxious, confusing, self-doubting, blood boiling, hair-pulling, banging-head-on-your-keyboard and about-to-cry hours in front of your computer. That's the best way to do it. That's the best way to learn.
+A general fact - to learn and write great code you must go through frustrating, anxious, confusing, self-doubting, blood-boiling, hair-pulling, banging-head-on-your-keyboard and about-to-cry hours in front of your computer. That's the best way to do it. That's the best way to learn.
 
-It's easy to find 'quick' solutions to complex problems using AI but that comes with it's side effects. When we brute force our way out of solutions using AI, it general looks like this: 
+It's easy to find 'quick' solutions to complex problems using AI but that comes with it's side effects. When we brute force our way out of problems using AI, it general looks like this: 
 - GPT a solution
 - use the subpar solution
 - face bottlenecks, roadblocks and errors in the subpar solution
 - GPT the solution again
 
-We keep doing this until the code becomes a mix of generated code that looks fancy, we have some vague idea of and operates on very low confidence levels. This not only makes you more dependent on AI for the next steps but introduces abstraction that was never needed.
+We keep doing this until the code becomes a mix of generated code that looks fancy, code we have some vague idea of and code that operates on very low confidence levels. This not only makes you more dependent on AI for the next steps but introduces abstraction that was never needed.
 
 How you should use them so they support you:
 - Don't copy-pasta generated code unless it's **test data, complex database queries/aggregations/regular-expressions, repetition of code you fully understand or a refactor of code you originally wrote.** 
