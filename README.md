@@ -1,18 +1,24 @@
-# Quartz v4
+----
+# **PSOC Documentation Vault**
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+## All PSOC Project Documentation in One Place
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+Welcome to the **PSOC Documentation Vault**, a centralized repository for all project-related documentation. This vault is designed to help contributors, developers, and stakeholders access key resources efficiently and collaborate effectively.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+### **Contents**
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+-  **Code References**
+- **API Documentation**
+- **Requirement Documents**
+- **Coding Standards and Guidelines**
+- **Implementation Explanations**
+- **System Architecture and Design**
 
-## Sponsors
+----
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+### **Get Involved**
+
+Join the **PSOC Community** to contribute, discuss, and stay updated!  
+👉 [Join the Discord Community](https://discord.gg/E5hS38Uz)
+
+---
