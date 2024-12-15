@@ -1,3 +1,4 @@
+Learn more about Profiles [[Profiles|here]].
 ### Journey
 
 Upon registering in the application, a user creates a profile that contains specific details related to the sport they play. A user can have multiple profiles if they participate in more than one sport. When requesting to join a team, the user selects one of their profiles, which can then be reviewed by the team Captain before approval. This ensures that the player’s qualifications and experience are properly considered.
