@@ -32,20 +32,35 @@ The **branch** field is particularly sensitive. In case of any changes, such as 
 
 Future updates will introduce [[Form Fields]]
 # After Registration
-After registration, players will initially have access similar to that of an unauthorized **AUDIENCE**. However, they will have additional capabilities that enhance their engagement and participation within the platform.
 
+After registration, players will initially have access similar to that of an unauthorized **AUDIENCE**. However, they will have additional capabilities that enhance their engagement and participation within the platform.
 ### **Players can:**
 
-- **Change their profile**
+- **Change their details**
+- **Create Profiles**
 - **Request to join teams**: Players can express interest in joining specific teams, which can be then approved / rejected by **Team Captains** ( more about this , later).
 - **Leave a team**
 
+# Profiles 
+A **profile** is essentially a collection of information that helps to define and showcase an individual's skills, background, and specific attributes. For players, a profile serves as a personal identity card that not only provides basic details but also highlights their expertise, performance, and other relevant information. This helps both the player and the audience to better understand the player’s capabilities and strengths.
+
+For example, consider **Saswat's Profile** in the context of a cricket player. It would include key details such as:
+
+- **Sport**: Cricket
+- **Position**: Batsman/Bowler/All-rounder
+- **Batting Style**: Right-hand/Left-hand
+- **Bowling Style**: Fast/Spin
+- **Team**: CSE 2
+- **Matches Played**: 45
+- **Average Score**: 35
+- **Wickets Taken**: 25
+- **Best Performance**: 150 runs in a match, 5 wickets in an innings
+- **Player Bio**: A brief description of the player’s cricket journey, strengths, and any notable achievements
+- **Achievements**: Trophies, awards, or significant milestones in their career (apparently saswat has no cricket acheivements so lets keep this empty :x)
+
+This profile will allow the audience to quickly identify the player’s strengths, role in the team, and notable achievements, creating a deeper connection with the audience and enhancing player visibility. For the player, it serves as a dynamic and evolving record of their skills and accomplishments, which can be updated as they progress in their sporting journey.
 #future-scope
 - **Self-Review**: In the future, players will have the ability to self-review their performance, gaining insights into their contributions and progress. This feature will help players evaluate their skills and growth, fostering a more self-driven approach to improvement.
-
-
-
-- create profile 
 
 #### **For the Audience**
 
