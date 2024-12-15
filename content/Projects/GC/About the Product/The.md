@@ -23,7 +23,7 @@ During registration, players will be required to provide the following essential
 - **Middle Name**
 - **Last Name**
 - **Phone Number**
-- **Valid College Email ID ( ending with *@iiit-bh.ac.in) ***
+- **Valid College Email ID ( ending with *@iiit-bh.ac.in)
 - **Gender**
 - **Batch**
 - **Branch**
@@ -32,16 +32,22 @@ Additionally, players have the option to include their social media profiles (e.
 
 The **branch** field is particularly sensitive. In case of any changes, such as a branch transfer, players can raise an issue, which will be reviewed and resolved by `SUPERADMIN` to ensure that all information remains accurate.
 
-Future updates caintroduce dynamic form field integrations, allowing the registration process to evolve with new features and requirements, further enhancing the flexibility and personalization of user profiles.
-
-players can: 
-- change profile 
-- request for joining teams
-- team leave
-  TEAM_ACTIONS
-- self-review (review your performance) - FUTURE SCOPE
+Future updates will introduce [[Form Fields]]
 
 
+#after-registration
+After registration, players will initially have access similar to that of an unauthorized **Audience**. However, they will have additional capabilities that enhance their engagement and participation within the platform.
+
+### **Players can:**
+
+- **Change their profile**: Players can update and modify their personal details, such as their name, contact information, and other profile settings, ensuring their information is always up-to-date.
+- **Request to join teams**: Players can express interest in joining specific teams, allowing for seamless integration into team-based activities and events.
+- **Leave a team**: Players have the ability to request to leave a team, providing them with control over their participation and team affiliations.
+- **Team Actions**: Players can take actions related to team management, such as requesting team membership or initiating team changes, all within the context of the platform’s team structure.
+
+### **Future Scope:**
+
+- **Self-Review**: In the future, players will have the ability to self-review their performance, gaining insights into their contributions and progress. This feature will help players evaluate their skills and growth, fostering a more self-driven approach to improvement.
 superadmin POV: 
 
 - change 
