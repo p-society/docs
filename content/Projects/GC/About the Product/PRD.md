@@ -1,6 +1,6 @@
 The product consists of three main components:
 
-The product consists of three core components, each designed to cater to different user needs and administrative roles. The **Mobile Application / Webview** serves as the main interface for the audience and players. It provides a platform for the audience to view live scores, match updates, and other event-related information. Players can also use this component to manage and update their personal profiles, offering a dynamic and engaging experience for those actively participating in the events.
+The product consists of three core components, each designed to cater to different user needs and administrative roles. The **Web Application** serves as the main interface for the audience and players. It provides a platform for the audience to view live scores, match updates, and other event-related information. Players can also use this component to manage and update their personal profiles, offering a dynamic and engaging experience for those actively participating in the events.
 
 The second component is the **Web Application (Admin Panel)**, which offers the Admin full control over the entire system. Through this panel, the admin can manage and configure match listings, oversee user accounts, and handle other critical system operations such as session management and security settings. This ensures that the system runs smoothly and allows the admin to make real-time adjustments as necessary.
 
