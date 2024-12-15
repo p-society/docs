@@ -1,7 +1,7 @@
 Learn more about Teams [[teams|here]].
 ### Journey
 
-Admins assign [[Squad]] captains, who are then responsible for building the teams for each match. The captains create teams by selecting players from their squad and adding necessary details, such as the team name and match-specific information. Once a team is created, captains can also edit or delete teams as needed, ensuring that the teams are properly set up for each match.
+Admins assign [[Squad]] [[Captains]], who are then responsible for building the teams for each [[Match]]. The captains create teams by selecting [[User|Players]] from their squad and adding necessary details, such as the team name and match-specific information. Once a team is created, captains can also edit or delete teams as needed, ensuring that the teams are properly set up for each match.
 
 ### Access Control
 

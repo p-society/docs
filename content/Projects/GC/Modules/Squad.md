@@ -1,8 +1,11 @@
+Learn more about Squads [[Squads|here]].
 ### Journey
 
-Admins are responsible for creating squads that will participate in the tournament and appointing captains for each squad. The squad captain plays a pivotal role in managing and leading the squad throughout the tournament.
+Admins are responsible for creating squads that will participate in the tournament and appointing [[Captains]] for each squad. The squad captain plays a role in managing and leading the squad throughout the tournament.
 
-Captains have additional responsibilities, including approving or rejecting requests from players (users) who wish to join a squad. Once a player is approved, they become part of the squad's pool. From this pool, captains can create teams. For example, in a cricket match, a captain may accept 20 players into the squad and then select the final team of 11 players FOR A PARTICULAR MATCH from these players.
+[[Captains]] have additional responsibilities, including approving or rejecting requests from [[User|Players]] (users) who wish to join a squad. Once a player is approved, they become part of the squad's pool. From this pool, captains can create [[Team]].
+
+For example, in a cricket match, a captain may accept 20 players into the squad and then select the final team of 11 players For a particular match from these players.
 
 ### Access Control
 
