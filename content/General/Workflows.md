@@ -1,1 +1,7 @@
-Picking up a feature, understanding requirements, reaching out for doubts (technical and requirement), maintaining documents
+#WIP
+### Picking up a feature
+### Understanding requirements
+
+### Reaching out for doubts (technical and requirement)
+
+### Maintaining documents

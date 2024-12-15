@@ -1,8 +1,10 @@
+----
+
 Unlike [guidelines](Guidelines), these are not enforcements. They are suggestions and advice for writing performant, maintainable and scalable code. You should follow these to have a great degree of control over the code you write, avoid unnecessary abstraction and [technical debt](Glossary/Non-technical/Technical-Debt) in the code base.
 
 ### 1. Write Atomic Code
 
-It is easy to keep bundling functionality into a single block of logic in our code. We must avoid this and write code that is decoupled, atomic and reusable.
+It is easy to keep bundling functionality into a single block of logic in our code. We must avoid this and write code that is decoupled, isolated and reusable.
 
 Say, we have to implement a function `renderPDFAndUploadToS3` that has to:
 -  render some template HTML into a PDF
