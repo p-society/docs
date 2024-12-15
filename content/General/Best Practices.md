@@ -129,7 +129,7 @@ How you should use them so they support you:
 - Don't copy-pasta generated code unless it's **test data, complex database queries/aggregations/regular-expressions, repetition of code you fully understand or a refactor of code you originally wrote.** 
 - Use it to understand errors, not bypass them. 
 - Read documentation to understand usage of a technology before asking an LLM.
-### 3. Approach to Roadblocks
+### 3. Approach To Roadblocks
 
 You will inevitably hit roadblocks. 
 
@@ -141,7 +141,7 @@ Try to:
 - Go through the source code
 
 In order, from the top.
-### 4. Blueprint before writing
+### 4. Blueprint Before Writing
 
 'Figuring out as you write' is the surest way to write code that could have been written better. You should have a mental or physical (scribble on a page as much as you can) blueprint of the system/sub-system you are going to write. 
 
