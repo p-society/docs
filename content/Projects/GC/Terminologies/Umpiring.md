@@ -1,0 +1,9 @@
+**Umpiring** is a crucial aspect of any sports competition, ensuring that matches are conducted fairly and in accordance with the established rules. In this system, **Umpires** are assigned from a pool of [[User|Players]] who meet certain eligibility criteria, such as fair play guidelines. Admins play a key role in promoting players to umpire status based on these guidelines, which ensures that only qualified individuals are selected to oversee the match.
+
+The umpire's responsibilities go beyond just observing the game. They are in charge of **score updating**, ensuring that the match progresses smoothly by recording and reflecting accurate scores in real-time. Umpires also handle other duties such as making key decisions on the field, enforcing the rules of the game, and ensuring player safety. Their decisions can significantly impact the flow and outcome of a match, making their role vital in maintaining the integrity of the competition.
+
+Once a player is selected as an umpire, their **umpire status** is granted for a limited time period, known as the **Time-to-Live (TTL)**. After this TTL expires, the player returns to their regular user status, with the umpire role being revoked. This time-bound nature ensures that umpiring is temporary and dynamic, providing flexibility in managing who performs umpiring duties for different matches.
+
+In summary, umpiring is a critical role in match management, requiring fair and knowledgeable individuals to ensure the integrity of the game. Admins have the authority to assign umpire roles based on eligibility, and these roles are temporary, automatically expiring after the specified TTL.
+
+Learn more about [[Umpire Assignment - Promote Player with TTL]].
