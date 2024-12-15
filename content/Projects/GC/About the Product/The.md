@@ -5,10 +5,11 @@ The product involves three components
 - a admin application / webview to be used for updating the scores
 Roles: 
 
-| **Role**       | **Description**                                                                                                                                                                         |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **USER**       | Represents general users of the application, including roles such as Audience, Captains, and Umpires. Users can browse various components of the platform based on their specific role. |
-| **SUPERADMIN** | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
+| **Role**  | **Description**                                                                                                                                                                         |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **USER**  | Represents general users of the application, including roles such as Audience, Captains, and Umpires. Users can browse various components of the platform based on their specific role. |
+| **ADMIN** | Holds complete control over the system, including managing user accounts, overseeing match listings, configuring teams and squads, and terminating live user sessions when necessary.   |
+|           |                                                                                                                                                                                         |
 
 ### Functional Requirements
 # **User Management**
