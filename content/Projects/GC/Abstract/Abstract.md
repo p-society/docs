@@ -1,0 +1,1 @@
+We (the authors of this document ) were often impressed by realtime systems and big data ingestion and management software. So we were looi
