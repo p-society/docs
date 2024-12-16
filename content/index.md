@@ -1,7 +1,7 @@
 ---
 title: Welcome to Programming Society's Project Documentation !
 ---
-Welcome to the **Documentation Repository** for all projects under the Programming Society (PSoc) at IIIT Bhubaneswar. Th[]()is page serves as a centralized hub for maintaining and accessing Requirement Docs, API Documentation and Decision Explanations for various projects developed by the society members.
+Welcome to the **Documentation Repository** for all projects under the Programming Society (PSoc) at IIIT Bhubaneswar. This page serves as a centralized hub for maintaining and accessing Requirement Docs, API Documentation and Decision Explanations for various projects developed by the society members.
 
 ![[psoc.png]]
 
@@ -26,4 +26,3 @@ Welcome aboard, and let's build better software, together!
 ---
 
 This repository is maintained by the **Programming Society (PSoc)** at IIIT Bhubaneswar. Contributions are welcome and appreciated!
-
