@@ -131,6 +131,7 @@ How you should use them so they support you:
 - Don't copy-pasta generated code unless it's **test data, complex database queries/aggregations/regular-expressions, repetition of code you fully understand or a refactor of code you originally wrote.** 
 - Use it to understand errors, not bypass them. 
 - Read documentation to understand usage of a technology before asking an LLM.
+- Understand how to implement something you have no idea about.
 ### 3. Approach To Roadblocks
 
 You will inevitably hit roadblocks. 
