@@ -217,3 +217,5 @@ Response:
   ]
 }
 ```
+
+Learn about all the currently supported options [here](https://github.com/p-society/gc-broadcast/blob/dev/src/types/QueryOptions.d.ts).
