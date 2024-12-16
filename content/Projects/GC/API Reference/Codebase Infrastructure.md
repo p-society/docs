@@ -138,7 +138,7 @@ The main source code directory for the application:
 
 1. **`common/`**:
     
-    - Utility functions, reusable components, and shared services (e.g., `mailer.ts` for sending emails, `soft-delete-schema.ts` for handling soft deletes).
+    - Utility functions, reusable components, and shared services (e.g., `mailer.ts` for sending emails, `soft-delete-schema.ts` for handling soft deletes),etc.
 2. **`constants/`**:
     
     - **`roles-enum.ts`**: Enum definitions for user roles.
