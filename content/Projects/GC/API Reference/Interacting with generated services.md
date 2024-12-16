@@ -125,6 +125,14 @@ This will automatically include the related `organization` data in the response 
 
 ```
 
-### Querying with Flexibility
+Some more common query options you will be using is 
+$paginate = true / false
+$regex
+$or
 
-With this approach, you can easily sort, filter, and populate related fields using just query parameters. It simplifies the process and eliminates the need for extra routes for common use cases. Just pass the appropriate parameters, and you’re all set!
+
+### Examples of Querying Data in Internal Services
+
+when you are developing services, there will come cases where u want to access other services to get the data managed by them
+eg: a userService might require 
+
