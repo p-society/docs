@@ -18,7 +18,7 @@ Learn more about this here: [Porting Feathers.js (v4) to NestJS: Global Service 
 
 # Querying
 
-The query options and filters provide a powerful and flexible way to control how data is retrieved from the database. By utilizing these options, you can filter, sort, paginate, and populate related data efficiently. The available query options are:
+The query options and filters provide a powerful and flexible way written by us to control how data is retrieved from the database. By utilizing these options, you can filter, sort, paginate, and populate related data efficiently. The available query options are:
 
 - **$select**: This option allows you to specify which fields to include in the result, optimizing the query by limiting the data returned. It ensures that only the necessary fields are fetched, improving performance.
 
@@ -34,34 +34,97 @@ In addition to these core query options, there are several **InternalQueryOption
 
 Learn about all the currently supported options [here](https://github.com/p-society/gc-broadcast/blob/dev/src/types/QueryOptions.d.ts).
 
-# Examples 
+### Examples of Querying Data with Query Parameters
 
-So lets say i generated a userService using the generate scripts (using yarn generate users)
-so now, i can query the users API using query parameters to get desired results!
+Let’s say you generated a `user`  module  using the `yarn generate users` command. Now, you can easily query the users' API using query parameters to retrieve the exact data you need, without writing custom routes!
 
+#### Example Schema: User
 
-for example, if my schema looks something like:
+Your `User` schema might look something like this:
 
-<a schema of users>
+```javascript
+{
+  _id: ObjectId,
+  name: String,
+  email: String,
+  createdAt: Date,
+  organization: { type: ObjectId, ref: 'Organization' }
+}
+```
 
+### Fetching the Latest Users
 
-and i want to query to all latest users created in the application.
+Instead of writing a separate function like `findUsersLatest()`, you can query for the latest users using query parameters:
 
-usually, a dev have to create a separate route, something like findUsersLatest() . but with this architecture, we can simple query and get results.
+```
+http://localhost:3000/users?$sort[createdAt]=-1
+```
 
-eg: http://localhost:3000/users?$sort[createdAt]=-1
+This sorts users by the `createdAt` field in descending order. It’s a quick and efficient way to fetch the most recently created users.
 
-thats it!
+#### Sample Response:
 
+```json
+[
+[
+  {
+    "_id": "user1_id",
+    "name": "Soubhik Gon",
+    "email": "b422056@iiit-bh.ac.in",
+    "createdAt": "2024-12-16T10:00:00Z",
+    "organization": "org1_id"
+  },
+  {
+    "_id": "user2_id",
+    "name": "Saswat PB",
+    "email": "b122103@iiit-bh.ac.in",
+    "createdAt": "2024-12-14T15:30:00Z",
+    "organization": "org2_id"
+  }
+]
+]
+```
 
-if i want to populate the fields that refer to another collection, forexample
-if my use
+### Populating Related Fields
 
+If your `User` schema contains a reference to another collection, such as an `organization` field, you can easily populate that field with the related data. Here’s how you do it:
 
+```
+http://localhost:3000/users?$populate=organization
+```
 
+This will automatically include the related `organization` data in the response for each user.
 
+#### Sample Response with Populated Data:
 
+```json
+[
+  {
+    "_id": "60f7c9f3f8d5e8b28c7f1c4a",
+    "name": "Soubhik Gon",
+    "email": "b422056@iiit-bh.ac.in",
+    "createdAt": "2024-12-15T12:00:00Z",
+    "organization": {
+      "_id": "org1_id",
+      "name": "IIIT Bhubaneswar",
+      "industry": "Education"
+    }
+  },
+  {
+    "_id": "60f7c9f3f8d5e8b28c7f1c4b",
+    "name": "Saswat PB",
+    "email": "b122103@iiit-bh.ac.in",
+    "createdAt": "2024-12-14T09:30:00Z",
+    "organization": {
+      "_id": "org2_id",
+      "name": "IIT Bhubaneswar",
+      "industry": "Education"
+    }
+  }
+]
 
+```
 
+### Querying with Flexibility
 
-
+With this approach, you can easily sort, filter, and populate related fields using just query parameters. It simplifies the process and eliminates the need for extra routes for common use cases. Just pass the appropriate parameters, and you’re all set!
