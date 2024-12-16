@@ -33,3 +33,35 @@ The query options and filters provide a powerful and flexible way to control how
 In addition to these core query options, there are several **InternalQueryOptions** that provide more advanced filtering and querying capabilities:
 
 Learn about all the currently supported options [here](https://github.com/p-society/gc-broadcast/blob/dev/src/types/QueryOptions.d.ts).
+
+# Examples 
+
+So lets say i generated a userService using the generate scripts (using yarn generate users)
+so now, i can query the users API using query parameters to get desired results!
+
+
+for example, if my schema looks something like:
+
+<a schema of users>
+
+
+and i want to query to all latest users created in the application.
+
+usually, a dev have to create a separate route, something like findUsersLatest() . but with this architecture, we can simple query and get results.
+
+eg: http://localhost:3000/users?$sort[createdAt]=-1
+
+thats it!
+
+
+if i want to populate the fields that refer to another collection, forexample
+if my use
+
+
+
+
+
+
+
+
+
