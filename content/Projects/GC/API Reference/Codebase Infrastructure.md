@@ -121,7 +121,7 @@ developers can quickly generate essential components such as controllers, servic
 - **`service.js`**: Script to generate service files.
 - **`service.spec.js`**: Script to generate test files for services.
 
-
+![Video](Assets/Screencast_20241216_145154.webm)
 
 ---
 
