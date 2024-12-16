@@ -210,34 +210,21 @@ First you need a local copy of `gc-broadcast`. Run the following command in the 
 3. **For Our Open Source Contributor Software Developers:**
 
    1. Next, we'll fork and clone the `gc-broadcast` repository.
-   1. In your web browser, navigate to [https://github.com/p-society/gc-broadcast/](https://github.com/PalisadoesFoundation/talawa-api/) and click on the `fork` button. It is placed on the right corner opposite the repository name `PalisadoesFoundation/talawa-api`.
-
-      ![Image with fork](public/markdown/images/install1.png)
-
-   1. You should now see `talawa-api` under your repositories. It will be marked as forked from `PalisadoesFoundation/talawa-api`
-
-      ![Image of user's clone](public/markdown/images/install2.png)
+   1. In your web browser, navigate to [https://github.com/p-society/gc-broadcast/](https://github.com/PalisadoesFoundation/talawa-api/) and click on the `fork` button. It is placed on the right corner opposite the repository name `p-society/gc-broadcast`.
+![[Pasted image 20241216131541.png]]
+   1. You should now see `gc-broadcast` under your repositories. It will be marked as forked from `p-society/gc-broadcast`
 
    1. Clone the repository to your local computer (replacing the values in `{{}}`):
       ```bash
-      $ git clone https://github.com/{{YOUR GITHUB USERNAME}}/talawa-api.git
-      cd talawa-api
-      git checkout develop
+      $ git clone https://github.com/{{YOUR GITHUB USERNAME}}/gc-broadcast.git
+      cd gc-broadcast
+      git switch dev
       ```
       - **Note:** Make sure to check out the `develop` branch
-   1. You now have a local copy of the code files. For more detailed instructions on contributing code, and managing the versions of this repository with `git`, checkout our [CONTRIBUTING.md](./CONTRIBUTING.md) file.
-
-4. **Talawa Administrators:**
-
-   1. Clone the repository to your local computer using this command:
-
-      ```bash
-      $ git clone https://github.com/PalisadoesFoundation/talawa-api.git
-      ```
-
+   
 ## Install node.js
 
-Best way to install and manage `node.js` is making use of node version managers. We recommend using `fnm`, which will be described in more detail later.
+Best way to install and manage `node.js` is making use of node version managers. We recommend using `volta`, which will be described in more detail later.
 
 Follow these steps to install the `node.js` packages in Windows, Linux and MacOS.
 
@@ -257,12 +244,7 @@ Follow these steps to install the `node.js` packages in Windows, Linux and MacOS
          7. Exit PowerShell
          8. This will ensure that you are always using the correct version of `node.js`
 2. For Linux and MacOS, use the terminal window.
-   1. install `node.js`
-   2. then install `fnm`
-      1. Refer to the installation page's section on the `Shell Setup` recommendations.
-      2. Run the respective recommended commands to setup your node environment
-      3. This will ensure that you are always using the correct version of `node.js`
-
+   1. Use Volta: https://volta.sh/
 ## Install TypeScript
 
 TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It adds optional types, classes, and modules to JavaScript, and supports tools for large-scale JavaScript applications.
@@ -275,144 +257,73 @@ npm install -g typescript
 
 This command installs TypeScript globally on your system so that it can be accessed from any project.
 
+## Install Yarn
+
+Yarn is a fast, reliable, and secure package manager for JavaScript. It is an alternative to npm, offering enhanced speed and features like dependency locking and offline caching, making it suitable for managing large-scale projects.
+
+To install Yarn, you can use the `npm` command (which comes with Node.js) or install it directly via other package managers:
+
+### Install via npm:
+
+```bash
+npm install -g yarn
+```
+
+This command installs Yarn globally on your system, allowing you to use it across any project.
+
+### Alternative Installation Methods:
+
+- **Homebrew (macOS):**
+    
+    ```bash
+    brew install yarn
+    ```
+    
+- **Chocolatey (Windows):**
+    
+    ```bash
+    choco install yarn
+    ```
+    
+- **Linux:** Use your distribution's package manager or install Yarn via the Yarn repository.
+    
+
+Once installed, you can verify Yarn's installation by running:
+
+```bash
+yarn --version
+```
+
+This will display the installed version of Yarn, confirming that it is ready to use.
 ## Install Required Packages
 
 Run the following command to install the packages and dependencies required by the app:
 
 ```
-npm install
+yarn
 ```
 
 The prerequisites are now installed. The next step will be to get the app up and running.
 
 # Installation Using Docker
 
-This guide provides step-by-step instructions on deploying a talawa-api using Docker. Docker allows you to package your application and its dependencies into a container, providing a consistent environment across different systems.
-
-Here is a list of steps to follow:
-
-1. Run the application setup procedure
-2. Install the Docker application
-3. Install the Docker helper
-4. Install other supporting software such as the database using the `docker-compose` command.
-5. Start Docker using the `docker-compose` command
-6. Import the sample data into the database
-
-## Run the Talawa-API Setup
-
-We have created a setup script to make configuring Talawa-API easier.
-
-1. You can do this by running the command below.
-2. Default answers will be given with capital letters
-3. Details of what each prompt means can be found in the [Configuration](#configuration) section of this document.
-
-```
-npm run setup
-```
-
-## Install the Docker Application
-
-There are many ways to install Docker. We reccommend using Docker Desktop. It can be downloaded here:
-
-- Download [Docker Desktop](https://www.docker.com/products/docker-desktop) using this link.
-
-## Docker Compose Setup
-
-## Prerequisites
-
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed on your machine.
-
-After installing Docker, you'll need to tell Docker to install the additional software it will need to run the application.
-
-The setup steps differ depending on whether you are working in a development or production environment.
-
-### For Development
-
-Follow these steps for setting up a software development environment.
-
-1. Building and Starting Development Containers:
-
-   1. Using Windows:
-
-      ```bash
-      docker-compose -f docker-compose.dev.yaml up --build
-      ```
-
-   2. Using Ubuntu: 1. Running synchronously. Using CTRL-C will stop it.
-      `bash
-         sudo /usr/libexec/docker/cli-plugins/docker-compose -f docker-compose.dev.yaml up --build
-         ` 2. Running asynchronously in a subshell. You will have to use the `docker-compose down` command below to stop it.
-      `bash
-sudo /usr/libexec/docker/cli-plugins/docker-compose -f docker-compose.dev.yaml up --build &
-`
-      This command starts the development environment, where you can make changes to the code, and the server will automatically restart.
-
-2. Accessing the Development Application: Open your web browser and navigate to:
-
-   ```
-   http://localhost:4000
-   ```
-
-3. Stopping Development Containers:
-
-   1. Using Windows:
-
-      ```
-      docker-compose -f docker-compose.dev.yaml down
-      ```
-
-   2. Using Ubuntu:
-
-      ```
-      sudo /usr/libexec/docker/cli-plugins/docker-compose -f docker-compose.dev.yaml down
-      ```
-
-### For Production
-
-Follow these steps for setting up a production environment.
-
-1. Building and Starting Production Containers:
-
-   ```
-   docker-compose -f docker-compose.prod.yaml up --build -d
-   ```
-
-   This command starts the production environment in detached mode, suitable for production deployment.
-
-2. Accessing the Production Application:Open your web browser and navigate to:
-
-   ```
-   http://localhost:4001
-   ```
-
-3. Stopping Production Containers:
-   ```
-   docker-compose -f docker-compose.prod.yaml down
-   ```
-
-### Congratulations! 🎉 Your Talawa API is now successfully set up and running using Docker!
-
-**Note: If you're using Docker, you'll need to manually import the sample data after the Docker Compose has started the MongoDB container. For instructions on how to do this, refer to [Importing Sample Database](#importing-sample-database)**
-
-## Import The Sample Data
-
-You'll need to manually import the sample data after the Docker Compose has started the MongoDB container. For instructions on how to do this, refer to the [Importing Sample Database](#importing-sample-database) section of this document.
+#WIP
 
 # Installation without Docker
 
-There are more steps, but the outcome is the same. A working Talawa-API instance.
+There are more steps, but the outcome is the same. A working GC-Broadcast-API instance.
 
 ## Install the Required Packages
 
-Install the packages required by `talawa-api` using this command:
+Install the packages required by `gc-broadcast` using this command:
 
 ```
-npm install
+yarn
 ```
 
 ## Install MongoDB
 
-Talawa-api makes use of `MongoDB` for its database needs. We make use of `mongoose ODM` to interact with the MongoDB database from within the code.
+GC-Broadcast makes use of `MongoDB` for its database needs. We make use of `mongoose ODM` to interact with the MongoDB database from within the code.
 
 ### Setting up the mongoDB database
 
@@ -424,7 +335,7 @@ We're listing some common approaches to set up a running instance of MongoDB dat
 
 ## Install Redis
 
-Talawa-api makes use of `Redis` for caching frequently accessed data items in the primary database. We make use of `ioredis` to interact with the `redis-server` from within the code. The main Idea is the in production this will act as an in-memory cache. So it is recommended that you set it up locally. However for simplicity purposes, a section to accommodate for setting Redis up using a remote instance like Redis Cloud has been added. Please note that this is not recommended since the remote connection takes a considerable amount of time to be considered as a cache to improve application performance.
+GC-Broadcast makes use of `Redis` for caching frequently accessed data items in the primary database. We make use of `ioredis` to interact with the `redis-server` from within the code. The main Idea is the in production this will act as an in-memory cache. So it is recommended that you set it up locally. However for simplicity purposes, we have added a rediscloud instance of our own in dev branch.
 
 ### Performance Benefits
 
