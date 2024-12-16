@@ -1,3 +1,5 @@
+
+![[Pasted image 20241216161236.png]]
 ## Send OTP
 
 This endpoint sends a One-Time Password (OTP) to a specified email address. It is used for email verification and authentication purposes.
