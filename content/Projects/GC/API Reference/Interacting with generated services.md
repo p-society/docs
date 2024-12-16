@@ -133,6 +133,87 @@ $or
 
 ### Examples of Querying Data in Internal Services
 
-when you are developing services, there will come cases where u want to access other services to get the data managed by them
-eg: a userService might require 
+When developing services in a microservices architecture, it's common to have one service interact with another to access data managed by the other.
 
+For instance, an Analytics Service may need to query an Organization Service to get a list of organizations. Let's look at an example of how you can structure this interaction in a NestJS service.
+Example: Querying Data from Another Service
+
+Let's assume we have two services: AnalyticsService and OrganizationService. The AnalyticsService needs to fetch a list of organizations from the OrganizationService to generate analytics.
+
+For example, if your Organization Schema looks like:
+```ts
+export const OrganizationSchema = new Schema<Organization>({
+	name: { type: String, required: true },
+	createdBy: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+	createdAt: { type: Date, default: Date.now },
+	yearOfEstd: { type: Number, required: true },
+	revenue: { type: Number, required: true },
+});
+```
+
+An example syntax for a query is: 
+
+```ts
+// analytics.controller.ts
+import { Controller, Get } from '@nestjs/common';
+import { OrganizationService } from './organization.service';
+
+@Controller('analytics')
+export class AnalyticsController {
+  constructor(
+  private readonly analyticsService: AnalyticsService,
+  private readonly organizationService: OrganizationService,
+  ) {}
+
+  @Get('/a-custom-org-analytics')
+  getAnalyticsData() {
+    const organizations = this.organizationService._find({
+		$paginate: false,
+		$populate: ['createdBy'],
+		$sort: {
+			createdAt: -1
+		},
+		$limit: 34,
+		$select: ['name','createdBy','createdAt','yearOfEstd','revenue'],
+		yearOfEstd: 2011,
+		//more fields,as per requirements
+	});
+
+    return {
+      totalOrganizations: organizations.length,
+      organizationsList: organizations,
+    };
+  }
+}
+```
+
+Response: 
+```json
+{
+  "totalOrganizations": 2,
+  "organizationsList": [
+    {
+      "_id": "org1_id",
+      "name": "IIIT Bhubaneswar",
+      "createdBy": {
+        "_id": "user1_id",
+        "name": "Debashish Jena"
+      },
+      "createdAt": "2024-12-15T12:00:00Z",
+      "yearOfEstd": 2011,
+      "revenue": 0 //sara toh woh hi khajata hai #save-iiit #remove registrar
+    },
+    {
+      "_id": "org2_id",
+      "name": "MKT",
+      "createdBy": {
+        "_id": "user2_id",
+        "name": "Saswat"
+      },
+      "createdAt": "2024-12-14T09:30:00Z",
+      "yearOfEstd": 2011,
+      "revenue": 1200000
+    }
+  ]
+}
+```
