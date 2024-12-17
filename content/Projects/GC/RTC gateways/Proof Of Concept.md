@@ -1,8 +1,4 @@
 # Real-Time Communication (RTC) Services Gateway Specification
-
-![[Gateways_POC.png]]
-
-[Reference for above diagram](https://youtu.be/exSwQtMxGd4?si=Po0HfmScV2sWFTK2&t=1764) 
 ## 1) Connection Initiation Gateway
 
 ### Objective
@@ -19,8 +15,8 @@ The initial connection payload is a compact JSON object containing:
 
 ```json
 {
-  "id": "collage id", 
-  "eventId": "some Id"
+  "id": "college_id", 
+  "eventId": "some_Id"
 }
 ```
 
@@ -127,3 +123,24 @@ Drawing insights from:
 - Reduced server load
 - Improved connection stability
 - Efficient handling of intermittent network conditions
+## Real-Time Communication (RTC) Services Gateway Specification
+
+![[Gateways_POC.png]]
+
+[Reference for above diagram](https://youtu.be/exSwQtMxGd4?si=Po0HfmScV2sWFTK2&t=1764) 
+
+### 1) Connection Initiation Gateway
+
+The **Connection Initiation Gateway** establishes the initial connection when a user launches the web application and selects a specific sporting event. This gateway is responsible for creating a real-time communication channel, sending initial client details, confirming the event selection, and preparing for subsequent updates. The connection payload consists of a unique client identifier (`id`) and an event identifier (`eventId`). Once the server receives the request, it acknowledges the connection, opens a dedicated communication channel for the event, and enables real-time updates. Additionally, this gateway tracks concurrent user engagement to analyze the number of users viewing the event simultaneously. Overall, it sets the foundation for real-time interactions and analytics.
+
+### 2) Score Update Gateway
+
+The **Score Update Gateway** is designed to deliver sport-specific, real-time updates while maintaining flexibility to accommodate diverse sports requirements. The update frequency varies depending on the sport—cricket updates occur on every ball, chess updates after every move, and football updates when significant events like goals or fouls occur. For example, a cricket update payload includes the current score, a brief comment, and granular details about the batsman (e.g., runs, balls faced) and bowler (e.g., overs bowled, runs conceded, wickets taken). This gateway enables rich, detailed event tracking, delivering timely updates to enhance the user experience and provide immersive real-time coverage.
+
+### 3) Reaction Gateway
+
+The **Reaction Gateway** enhances user engagement by enabling real-time social interaction during events. Viewers can send live reactions, emojis, and optional text comments to express their emotions. The reaction payload includes a user identifier (`id`), the emoji for the emotional response, and an optional comment. By allowing users to interact in real-time, this gateway creates a dynamic and social viewing environment, fostering instant emotional expression and increasing overall engagement during live sporting events.
+
+### 4) Heartbeat/Ping-Pong Gateway
+
+The **Heartbeat/Ping-Pong Gateway** ensures the stability and reliability of active connections. It involves sending continuous ping messages from the frontend to the server in a loop to verify the connection's health. The server monitors these pings and, if no message is received within a designated timeframe, assumes the client connection is lost and gracefully closes it. This gateway optimizes resource management, reduces server load, and efficiently handles intermittent network issues. By implementing robust connection monitoring strategies inspired by tools like _Reconnecting WebSocket_ and WebSocket loss-handling best practices, this gateway improves connection lifecycle management and enhances overall system stability.
